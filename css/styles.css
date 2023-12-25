@@ -13,7 +13,7 @@ body {
 	justify-content: center;
 	align-items: center; */
 }
-.container, .main,.aside{
+.container, .main,.aside,.card{
 	padding: 3px;
 	border: 1px solid white;
 	border-radius: 10px;
@@ -36,54 +36,69 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	row-gap: 20px;
 }
 .clock {
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
 	border: 10px solid lightpink;
-	background-image: url(../clock-24h.png);
+	background-image: url(../clock.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 }
 .secondes {
 	position: absolute;
-	top: 43px;
-	right: 139px;
-	width: 2px;
-	height: 112px;
+	top: 42px;
+	right: 140px;
+	width: 1px;
+	height: 100px;
 	transform-origin: bottom;
 	background-color: red;
 	z-index: 10;
 }
 .minutes {
 	position: absolute;
-	top: 55px;
-	right: 138px;
+	top: 48px;
+	right: 139px;
 	width: 4px;
-	height: 100px;
+	height: 92px;
 	z-index: 9;
 	transform-origin: bottom;
 	background-color: blue;
 }
 .hours {
 	position: absolute;
-	top: 70px;
+	top: 82px;
 	right: 139px;
 	width: 4px;
-	height: 85px;
+	height: 58px;
 	/* transform: rotateZ(90deg); */
 	transform-origin: bottom;
 	background-color: blue;
 }
 .center{
-	width: 12px;
-	height: 12px;
+	width: 15px;
+	height: 15px;
 	position: absolute;
 	background-color: black;
 	border-radius: 50%;
-	top: 150px;
+	top: 136px;
 	right: 135px;
 	z-index: 11;
+}
+.card{
+	width: 90%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+select{
+	font-size: larger;
+	padding: 2px;
+	width: 50%;
 }
